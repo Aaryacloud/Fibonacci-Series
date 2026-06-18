@@ -1,2 +1,18 @@
-# Fibonacci-Series
-The Fibonacci Series is a famous number sequence where each term is obtained by adding the previous two terms. It is widely used in mathematics, programming, and various real-world applications.
+#include <stdio.h>
+int main() {
+    int n, a = 0, b = 1, c, i;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for(i = 1; i <= n; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return 0;
+}
