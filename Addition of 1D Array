@@ -1,0 +1,11 @@
+#iclude <stdio.h>
+int main() {
+  int a[4] = {1,2,5,6}, b[4] = {8,9,7,5};
+  int c[4], i;
+
+  for(i=0; i<=4; i++){
+  c[i]=a[i]+b[i];
+  printf("%d\t", c[i]);
+  }
+  return 0;
+}
